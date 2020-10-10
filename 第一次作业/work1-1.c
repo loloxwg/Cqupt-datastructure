@@ -51,7 +51,7 @@ void print(SqList *L)  //不是printf
     printf("\n");
 }
 
-//鍒ゆ柇鎻掑叆浣嶇疆
+//判断插入位置
 Status Locate(SqList *L,ElemType e)
 {
     if (e<L->data[0])
@@ -77,7 +77,7 @@ Status Locate(SqList *L,ElemType e)
     
     
 }
-//鎻掑叆
+//插入
 Status InorderList(SqList *L,ElemType Location,ElemType e)
 {
     for (int i = L->Length-1; i >=Location ; i--)
